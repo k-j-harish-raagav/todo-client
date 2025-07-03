@@ -9,7 +9,7 @@ export default function Signup() {
   const navigate = useNavigate();
 
   const handleSignup = async () => {
-    await axios.post(`${process.env.REACT_APP_API_URL}/auth/signup`, { username, password });
+    await axios.post(`${process.env.REACT_APP_API_URL}/api/auth/signup`, { username, password });
     navigate('/');
   };
 
